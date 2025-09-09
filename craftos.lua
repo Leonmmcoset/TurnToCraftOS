@@ -139,5 +139,5 @@ fs.delete("/startup.lua")
 textutils.coloredPrint("Your system startup has been turned back to CraftOS.")
 textutils.coloredPrint("Please restart your computer to complete the process.")
 if confirm2 == "y" then
-  textutils.coloredPrint("If you want to turn your system back to LeonOS, please rename \"turntoleonos.lua\" to \"rename.lua\".")
+  textutils.coloredPrint("If you want to turn your system back to LeonOS, please rename \"turntoleonos.lua\" to \"startup.lua\".")
 end
