@@ -15,7 +15,8 @@ end
 textutils.coloredPrint(colors.yellow, "Can we put a excuteable file so you can turn your system back to LeonOS? (y/n)")
 local confirm2 = term.read()
 if confirm2 == "y" then
-  fs.write("/turntoleonos.lua", [[-- UnBIOS by JackMacWindows
+  local file = fs.open("/turntoleonos.lua", "w")
+  file.write([[-- UnBIOS by JackMacWindows
 -- Modified by Leonmmcoset to work with LeonOS
 -- This will undo most of the changes/additions made in the BIOS, but some things may remain wrapped if `debug` is unavailable
 -- To use, just place a `bios.lua` in the root of the drive, and run this program
@@ -132,6 +133,7 @@ if debug then
     end
 end
 coroutine.yield()]])
+file.close()
 end
 fs.delete("/startup.lua")
 textutils.coloredPrint("Your system startup has been turned back to CraftOS.")
