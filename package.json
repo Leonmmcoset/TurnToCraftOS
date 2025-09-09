@@ -1,0 +1,11 @@
+{
+  "name": "Turn To CraftOS",
+  "version": "1.0.1",
+  "description": "Make your system startup to CraftOS.",
+  "author": "LeonMMcoset",
+  "license": "MIT",
+  "dependencies": {},
+  "files": [
+    "craftos.lua"
+  ]
+}
