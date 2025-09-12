@@ -4,6 +4,7 @@
   "description": "Make your system startup to CraftOS.",
   "author": "LeonMMcoset",
   "license": "MIT",
+  "type": "app",
   "dependencies": {},
   "files": [
     "craftos.lua"
